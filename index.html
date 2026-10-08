@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LSSC | Laboratory of Spectroscopy of Complex Systems, University of Catania</title>
+<meta name="description" content="Research group at the Department of Chemical Sciences, University of Catania, working on chiral porphyrin assemblies, hybrid films and spectroscopy of biomolecules.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F7FB;--ink:#1B1730;--mute:#5E5A72;--line:#DAD8E6;--violet:#5B2A86;--magenta:#C2397A;--teal:#1F7A8C;--panel:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;line-height:1.15;margin:0}
+a{color:var(--violet)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--magenta);outline-offset:3px}
+header{position:sticky;top:0;z-index:5;background:rgba(246,247,251,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+nav{max-width:1040px;margin:auto;padding:8px 24px;display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.brand{margin-right:auto;display:block;line-height:0}
+.brand img{height:48px;width:auto}
+nav a.l{text-decoration:none;color:var(--ink);font-size:.95rem}
+nav a.l:hover{color:var(--magenta)}
+section{max-width:1040px;margin:auto;padding:72px 24px 8px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding-top:64px}
+.hero h1{font-size:clamp(2.1rem,5vw,3.4rem);font-weight:700}
+.hero p{color:var(--mute);max-width:46ch;margin:20px 0 28px}
+.btn{display:inline-block;background:var(--violet);color:#fff;padding:11px 22px;border-radius:6px;text-decoration:none;font-weight:500}
+.btn:hover{background:var(--magenta)}
+.btn.alt{background:none;color:var(--violet);border:1px solid var(--violet);margin-left:10px;padding:10px 21px}
+.btn.alt:hover{background:var(--violet);color:#fff}
+figure{margin:0}
+figcaption{font-size:.85rem;color:var(--mute);margin-top:6px}
+svg text{font:12px "IBM Plex Sans",sans-serif;fill:var(--mute)}
+.spec{fill:none;stroke:var(--violet);stroke-width:2.5;stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 2.4s ease-out .3s forwards}
+.spec2{fill:none;stroke:#fff;stroke-width:2.6;stroke-linecap:round;stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 2.4s ease-out .3s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+h2{font-size:1.9rem;margin-bottom:22px}
+.lines{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px}
+.line{background:var(--panel);border-left:4px solid var(--teal);padding:0 22px 18px;border-radius:0 8px 8px 0;overflow:hidden}
+.line:nth-child(1){border-color:var(--violet)}
+.line:nth-child(2){border-color:var(--magenta)}
+.line:nth-child(4){border-color:var(--teal)}
+.line:nth-child(3){border-color:var(--violet)}
+.line svg{display:block;width:calc(100% + 44px);margin:0 -22px 14px;background:#EEEAF6}
+.line h3{font-size:1.15rem;margin-bottom:6px}
+.line p{margin:0;color:var(--mute);font-size:.97rem}
+.people{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:34px 20px}
+.person{text-align:center}
+.ph{width:132px;height:132px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 14px;border:4px solid #fff;box-shadow:0 0 0 2px var(--violet)}
+.person:nth-child(3n+2) .ph{box-shadow:0 0 0 2px var(--magenta)}
+.person:nth-child(3n) .ph{box-shadow:0 0 0 2px var(--teal)}
+.ph.init{display:flex;align-items:center;justify-content:center;background:#EEEAF6;color:var(--violet);font:700 2rem "Bricolage Grotesque",sans-serif}
+.person b{display:block}
+.person span{display:block;color:var(--mute);font-size:.93rem}
+.person a.mail{display:block;font-size:.88rem;margin-top:6px;word-break:break-all}
+.person a.orcid{display:inline-flex;align-items:center;gap:5px;font-size:.85rem;margin-top:4px;text-decoration:none;color:var(--mute)}
+.person a.orcid:hover{color:var(--magenta)}
+h3.sub{font-size:1.05rem;margin:28px 0 12px;color:var(--mute)}
+ul.plain{list-style:none;padding:0;margin:0}
+ul.plain li{padding:12px 0;border-bottom:1px solid var(--line)}
+ul.plain time{color:var(--mute);font-size:.9rem;display:block}
+.pub em{font-style:normal;font-weight:500}
+footer{max-width:1040px;margin:72px auto 0;padding:24px;border-top:1px solid var(--line);color:var(--mute);font-size:.9rem}
+@media(max-width:760px){.hero{grid-template-columns:1fr}nav{gap:14px}}
+@media(prefers-reduced-motion:reduce){.spec,.spec2{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><nav aria-label="Main">
+<a class="brand" href="#top"><img src="logo.png" alt="LSSC, Laboratorio di Spettroscopia dei Sistemi Complessi"></a>
+<a class="l" href="#research">Research</a><a class="l" href="#people">People</a><a class="l" href="#publications">Publications</a><a class="l" href="#news">News</a><a class="l" href="#join">Join us</a><a class="l" href="#contact">Contact</a>
+</nav></header>
+
+<main id="top">
+<section class="hero">
+<div>
+<h1>Laboratory of Spectroscopy of Complex Systems</h1>
+<p>We study how porphyrins and other molecules assemble into chiral architectures, films and nanosystems, and we use spectroscopy to read out their structure and their interactions with biomolecules. Department of Chemical Sciences, University of Catania.</p>
+<a class="btn" href="#research">See our research</a><a class="btn alt" href="#join">Join the group</a>
+</div>
+<figure>
+<svg viewBox="0 0 600 300" role="img" aria-label="A beam of white light crosses a cuvette containing a coloured porphyrin solution and is dispersed into a rainbow, on which a UV-Vis spectrum with a Soret band and Q bands is drawn">
+<defs><filter id="gl" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3.5"/></filter>
+<linearGradient id="liq" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D2468F"/><stop offset="1" stop-color="#5B2A86"/></linearGradient>
+<linearGradient id="bm" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset=".6" stop-color="#fff"/></linearGradient></defs>
+<rect width="600" height="300" rx="14" fill="#0B0A12"/>
+<polygon points="330,168 600,46.0 600,80.9" fill="#E8312F" fill-opacity=".92"/><polygon points="330,168 600,80.9 600,115.7" fill="#F7941D" fill-opacity=".92"/><polygon points="330,168 600,115.7 600,150.6" fill="#FFE600" fill-opacity=".92"/><polygon points="330,168 600,150.6 600,185.4" fill="#3FB950" fill-opacity=".92"/><polygon points="330,168 600,185.4 600,220.3" fill="#2D9CDB" fill-opacity=".92"/><polygon points="330,168 600,220.3 600,255.1" fill="#3D4FD1" fill-opacity=".92"/><polygon points="330,168 600,255.1 600,290.0" fill="#8E3FD1" fill-opacity=".92"/>
+<rect x="0" y="0" width="600" height="300" rx="14" fill="none"/>
+<g>
+<rect x="0" y="165" width="226" height="6" fill="url(#bm)" filter="url(#gl)"/><rect x="0" y="166.5" width="226" height="3" fill="url(#bm)"/>
+<polygon points="227,78 241,68 311,68 297,78" fill="#fff" fill-opacity=".08" stroke="#fff" stroke-opacity=".5" stroke-width="1.5"/>
+<polygon points="227,108 241,98 311,98 297,108" fill="#E26AA6"/>
+<polygon points="297,108 311,98 311,224 297,234" fill="#3F1C60"/>
+<rect x="227" y="108" width="70" height="126" fill="url(#liq)"/>
+<rect x="227" y="78" width="70" height="156" fill="#fff" fill-opacity=".05" stroke="#fff" stroke-opacity=".6" stroke-width="2"/>
+<polygon points="297,78 311,68 311,224 297,234" fill="#fff" fill-opacity=".06" stroke="#fff" stroke-opacity=".45" stroke-width="1.5"/>
+<rect x="233" y="84" width="6" height="146" fill="#fff" fill-opacity=".28"/>
+<rect x="227" y="166.5" width="70" height="3" fill="#fff" fill-opacity=".55"/>
+<rect x="297" y="165" width="33" height="6" fill="#fff" fill-opacity=".5" filter="url(#gl)"/><rect x="297" y="166.5" width="33" height="3" fill="#fff" fill-opacity=".8"/>
+</g>
+<line x1="420" y1="262" x2="592" y2="262" stroke="#fff" stroke-opacity=".5"/>
+<path class="spec2" filter="url(#gl)" d="M420 262 C436 262 444 255 448 225 C451 150 452 122 456 118 C460 122 462 150 466 225 C470 255 484 261 500 261 L505 261 C510 246 514 240 519 240 C524 240 528 255 532 258 C536 250 539 246 543 246 C547 246 550 258 554 259 C558 252 561 249 565 249 C569 249 573 258 579 260 L592 262"/>
+<path class="spec2" d="M420 262 C436 262 444 255 448 225 C451 150 452 122 456 118 C460 122 462 150 466 225 C470 255 484 261 500 261 L505 261 C510 246 514 240 519 240 C524 240 528 255 532 258 C536 250 539 246 543 246 C547 246 550 258 554 259 C558 252 561 249 565 249 C569 249 573 258 579 260 L592 262"/>
+<text x="470" y="126" style="fill:#fff;font-size:13px">Soret band</text>
+<text x="548" y="232" style="fill:#fff;font-size:13px" text-anchor="middle">Q bands</text>
+</svg>
+
+</figure>
+</section>
+
+<section id="research">
+<h2>Research</h2>
+<div class="lines">
+
+<div class="line">
+<svg viewBox="0 0 240 110" role="img" aria-label="Schematic of a helical strand wrapped by a stack of porphyrin units, forming a chiral assembly"><g transform="translate(22,50) rotate(-9)"><rect x="-13" y="-7" width="26" height="14" fill="#5B2A86"/><polygon points="-13,-7 -7,-12 19,-12 13,-7" fill="#8A5CB5"/><polygon points="13,-7 19,-12 19,2 13,7" fill="#3F1C60"/></g><g transform="translate(70,50) rotate(9)"><rect x="-13" y="-7" width="26" height="14" fill="#5B2A86"/><polygon points="-13,-7 -7,-12 19,-12 13,-7" fill="#8A5CB5"/><polygon points="13,-7 19,-12 19,2 13,7" fill="#3F1C60"/></g><g transform="translate(118,50) rotate(-9)"><rect x="-13" y="-7" width="26" height="14" fill="#5B2A86"/><polygon points="-13,-7 -7,-12 19,-12 13,-7" fill="#8A5CB5"/><polygon points="13,-7 19,-12 19,2 13,7" fill="#3F1C60"/></g><g transform="translate(166,50) rotate(9)"><rect x="-13" y="-7" width="26" height="14" fill="#5B2A86"/><polygon points="-13,-7 -7,-12 19,-12 13,-7" fill="#8A5CB5"/><polygon points="13,-7 19,-12 19,2 13,7" fill="#3F1C60"/></g><g transform="translate(214,50) rotate(-9)"><rect x="-13" y="-7" width="26" height="14" fill="#5B2A86"/><polygon points="-13,-7 -7,-12 19,-12 13,-7" fill="#8A5CB5"/><polygon points="13,-7 19,-12 19,2 13,7" fill="#3F1C60"/></g><path d="M8 55 q28 -46 56 0 t56 0 t56 0 t56 0" fill="none" stroke="#C2397A" stroke-width="7" stroke-linecap="round"/><g transform="translate(46,60) rotate(9)"><rect x="-13" y="-7" width="26" height="14" fill="#1F7A8C"/><polygon points="-13,-7 -7,-12 19,-12 13,-7" fill="#4FA3B5"/><polygon points="13,-7 19,-12 19,2 13,7" fill="#155663"/></g><g transform="translate(94,60) rotate(-9)"><rect x="-13" y="-7" width="26" height="14" fill="#1F7A8C"/><polygon points="-13,-7 -7,-12 19,-12 13,-7" fill="#4FA3B5"/><polygon points="13,-7 19,-12 19,2 13,7" fill="#155663"/></g><g transform="translate(142,60) rotate(9)"><rect x="-13" y="-7" width="26" height="14" fill="#1F7A8C"/><polygon points="-13,-7 -7,-12 19,-12 13,-7" fill="#4FA3B5"/><polygon points="13,-7 19,-12 19,2 13,7" fill="#155663"/></g><g transform="translate(190,60) rotate(-9)"><rect x="-13" y="-7" width="26" height="14" fill="#1F7A8C"/><polygon points="-13,-7 -7,-12 19,-12 13,-7" fill="#4FA3B5"/><polygon points="13,-7 19,-12 19,2 13,7" fill="#155663"/></g></svg>
+<h3>Chiral supramolecular assemblies</h3><p>Porphyrin aggregates in water that induce, amplify and remember chirality, recognise amino acids, and form one-dimensional chiral structures with calixarenes.</p>
+</div>
+
+<div class="line">
+<svg viewBox="0 0 240 110" role="img" aria-label="Schematic of functionalised glass slides, a slide removing a blue dye pollutant from water in a cuvette, and a light-activated film producing singlet oxygen that damages a bacterium"><g transform="translate(18,60) rotate(-8)"><rect x="-7" y="-28" width="14" height="56" rx="1.5" fill="#D5DEF0" stroke="#8FA0BF" stroke-width="1"/><rect x="-4.5" y="-25" width="2.5" height="50" fill="#fff" fill-opacity=".35"/><g fill="#F6D31A" stroke="#1B1730" stroke-width=".4"></g></g><g transform="translate(36,60) rotate(0)"><rect x="-7" y="-28" width="14" height="56" rx="1.5" fill="#8A5A3B" stroke="#5E3A22" stroke-width="1"/><rect x="-4.5" y="-25" width="2.5" height="50" fill="#fff" fill-opacity=".35"/><g fill="#F6D31A" stroke="#1B1730" stroke-width=".4"><circle cx="2" cy="-14" r="1.7"/><circle cx="-2" cy="-4" r="1.7"/><circle cx="3" cy="8" r="1.7"/><circle cx="-1" cy="18" r="1.7"/></g></g><g transform="translate(54,60) rotate(8)"><rect x="-7" y="-28" width="14" height="56" rx="1.5" fill="#C8505A" stroke="#8E2F3A" stroke-width="1"/><rect x="-4.5" y="-25" width="2.5" height="50" fill="#fff" fill-opacity=".35"/><g fill="#F6D31A" stroke="#1B1730" stroke-width=".4"><circle cx="2" cy="-22" r="1.7"/><circle cx="-2" cy="-16" r="1.7"/><circle cx="3" cy="-9" r="1.7"/><circle cx="-2" cy="-3" r="1.7"/><circle cx="2" cy="3" r="1.7"/><circle cx="-3" cy="9" r="1.7"/><circle cx="2" cy="15" r="1.7"/><circle cx="-2" cy="21" r="1.7"/><circle cx="3" cy="-26" r="1.7"/><circle cx="0" cy="-1" r="1.7"/></g></g><polygon points="94,34 100,29 100,83 94,88" fill="#fff" fill-opacity=".3" stroke="#8FA0BF" stroke-width="1.2"/><polygon points="94,46 100,41 100,83 94,88" fill="#2F6FD0" fill-opacity="0.44"/><rect x="70" y="46" width="24" height="42" fill="#2F6FD0" fill-opacity="0.55"/><g transform="translate(82.0,67) rotate(10)"><rect x="-4" y="-21" width="8" height="42" rx="1" fill="#8A5A3B" stroke="#5E3A22" stroke-width=".8"/><g fill="#2F6FD0"></g></g><g fill="#2F6FD0"><circle cx="75" cy="52" r="1.8"/><circle cx="88" cy="54" r="1.8"/><circle cx="79" cy="61" r="1.8"/><circle cx="89" cy="68" r="1.8"/><circle cx="76" cy="74" r="1.8"/><circle cx="87" cy="80" r="1.8"/><circle cx="82" cy="56" r="1.8"/><circle cx="90" cy="60" r="1.8"/><circle cx="75" cy="65" r="1.8"/><circle cx="83" cy="82" r="1.8"/><circle cx="91" cy="75" r="1.8"/><circle cx="80" cy="70" r="1.8"/></g><rect x="70" y="34" width="24" height="54" fill="#fff" fill-opacity=".12" stroke="#8FA0BF" stroke-width="1.4"/><rect x="73" y="38" width="2.4" height="46" fill="#fff" fill-opacity=".45"/><line x1="102" y1="62" x2="110" y2="62" stroke="#5E5A72" stroke-width="2" stroke-linecap="round"/><polygon points="108,57.5 115,62 108,66.5" fill="#5E5A72"/><polygon points="142,34 148,29 148,83 142,88" fill="#fff" fill-opacity=".3" stroke="#8FA0BF" stroke-width="1.2"/><polygon points="142,46 148,41 148,83 142,88" fill="#DCEBFA" fill-opacity="0.40"/><rect x="118" y="46" width="24" height="42" fill="#DCEBFA" fill-opacity="0.5"/><g transform="translate(130.0,67) rotate(10)"><rect x="-4" y="-21" width="8" height="42" rx="1" fill="#8A5A3B" stroke="#5E3A22" stroke-width=".8"/><g fill="#2F6FD0"><circle cx="-1" cy="-12" r="1.5"/><circle cx="1" cy="-5" r="1.5"/><circle cx="-1" cy="3" r="1.5"/><circle cx="1" cy="10" r="1.5"/><circle cx="0" cy="-1" r="1.5"/></g></g><g fill="#2F6FD0"></g><rect x="118" y="34" width="24" height="54" fill="#fff" fill-opacity=".12" stroke="#8FA0BF" stroke-width="1.4"/><rect x="121" y="38" width="2.4" height="46" fill="#fff" fill-opacity=".45"/><g stroke="#F2B90F" stroke-width="2" stroke-linecap="round"><line x1="176.0" y1="24.0" x2="179.5" y2="24.0"/><line x1="173.1" y1="31.1" x2="175.5" y2="33.5"/><line x1="166.0" y1="34.0" x2="166.0" y2="37.5"/><line x1="158.9" y1="31.1" x2="156.5" y2="33.5"/><line x1="156.0" y1="24.0" x2="152.5" y2="24.0"/><line x1="158.9" y1="16.9" x2="156.5" y2="14.5"/><line x1="166.0" y1="14.0" x2="166.0" y2="10.5"/><line x1="173.1" y1="16.9" x2="175.5" y2="14.5"/></g><circle cx="166" cy="24" r="7" fill="#F6D31A" stroke="#F2B90F" stroke-width="1"/><line x1="173" y1="31" x2="186" y2="48" stroke="#F2B90F" stroke-width="2.4" stroke-dasharray="3.5 3" stroke-linecap="round"/><g transform="translate(192,72) rotate(-12)"><rect x="-7" y="-28" width="14" height="56" rx="1.5" fill="#C8505A" stroke="#8E2F3A" stroke-width="1"/><rect x="-4.5" y="-25" width="2.5" height="50" fill="#fff" fill-opacity=".35"/><g fill="#F6D31A" stroke="#1B1730" stroke-width=".4"><circle cx="2" cy="-18" r="1.7"/><circle cx="-2" cy="-11" r="1.7"/><circle cx="3" cy="-4" r="1.7"/><circle cx="-2" cy="3" r="1.7"/><circle cx="2" cy="10" r="1.7"/><circle cx="-3" cy="17" r="1.7"/><circle cx="1" cy="-23" r="1.7"/><circle cx="-1" cy="22" r="1.7"/></g></g><g fill="#C2397A"><circle cx="211.5" cy="50" r="4.2"/><circle cx="220.5" cy="50" r="4.2"/></g><path d="M216 34 L217.4 37.6 L221 39 L217.4 40.4 L216 44 L214.6 40.4 L211 39 L214.6 37.6 Z" fill="#F6D31A" stroke="#F2B90F" stroke-width=".8"/><g fill="#C2397A"><circle cx="223.5" cy="68" r="4.2"/><circle cx="232.5" cy="68" r="4.2"/></g><path d="M228 53 L229.12 55.88 L232 57 L229.12 58.12 L228 61 L226.88 58.12 L224 57 L226.88 55.88 Z" fill="#F6D31A" stroke="#F2B90F" stroke-width=".8"/><text x="239" y="107" text-anchor="end" style="font-size:11px;fill:#C2397A;font-weight:500">¹O₂</text><g transform="translate(222,88) rotate(-20)"><rect x="-11" y="-5" width="22" height="10" rx="5" fill="#1F7A8C" fill-opacity=".85" stroke="#155663" stroke-width="1"/></g><g stroke="#C2397A" stroke-width="1.6" stroke-linecap="round"><line x1="206" y1="80" x2="210" y2="84"/><line x1="214" y1="76" x2="215" y2="80"/><line x1="206" y1="90" x2="211" y2="90"/></g></svg>
+<h3>Hybrid films and functional materials</h3><p>Porphyrinoid–melanin and chiral melanin films, nanostructures and functionalised surfaces, with applications in the removal of dye pollutants from water and in antibacterial photodynamic action based on singlet oxygen generation.</p>
+</div>
+
+<div class="line">
+<svg viewBox="0 0 240 110" role="img" aria-label="Schematic of a porphyrin intercalated in DNA, a porphyrin stacked on a parallel G-quadruplex, and the bisignate circular dichroism signal this produces"><defs><g id="pf" fill="#F6D31A" stroke="#1B1730" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"><g id="pfq"><path d="M0 -15 L-7.6 -22 L-4.8 -31 L4.8 -31 L7.6 -22 Z"/><path fill="none" d="M7.6 -22 L16 -16 L22 -7.6"/><path fill="none" d="M16 -16 L23 -23"/></g><use href="#pfq" transform="rotate(90)"/><use href="#pfq" transform="rotate(180)"/><use href="#pfq" transform="rotate(270)"/></g></defs><g stroke="#1F7A8C" stroke-width="1.8" stroke-opacity=".85"><line x1="37.0" y1="12" x2="23.0" y2="12"/><line x1="43.5" y1="18" x2="16.5" y2="18"/><line x1="42.1" y1="24" x2="17.9" y2="24"/><line x1="33.6" y1="30" x2="26.4" y2="30"/><line x1="23.0" y1="36" x2="37.0" y2="36"/><line x1="16.5" y1="42" x2="43.5" y2="42"/><line x1="17.9" y1="48" x2="42.1" y2="48"/><line x1="26.4" y1="54" x2="33.6" y2="54"/><line x1="37.0" y1="60" x2="23.0" y2="60"/><line x1="43.5" y1="66" x2="16.5" y2="66"/><line x1="42.1" y1="72" x2="17.9" y2="72"/><line x1="33.6" y1="78" x2="26.4" y2="78"/><line x1="23.0" y1="84" x2="37.0" y2="84"/><line x1="16.5" y1="90" x2="43.5" y2="90"/><line x1="17.9" y1="96" x2="42.1" y2="96"/><line x1="26.4" y1="102" x2="33.6" y2="102"/></g><ellipse cx="30" cy="44" rx="17" ry="5" fill="#F6D31A" stroke="#1B1730" stroke-width="1.3"/><polyline points="30.0,8.0 27.3,9.5 24.6,11.0 22.2,12.5 20.1,14.0 18.4,15.5 17.1,17.0 16.3,18.5 16.0,20.0 16.3,21.5 17.1,23.0 18.4,24.5 20.1,26.0 22.2,27.5 24.6,29.0 27.3,30.5 30.0,32.0" fill="none" stroke="#C2397A" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><polyline points="30.0,8.0 32.7,9.5 35.4,11.0 37.8,12.5 39.9,14.0 41.6,15.5 42.9,17.0 43.7,18.5 44.0,20.0 43.7,21.5 42.9,23.0 41.6,24.5 39.9,26.0 37.8,27.5 35.4,29.0 32.7,30.5 30.0,32.0" fill="none" stroke="#5B2A86" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><polyline points="30.0,32.0 27.3,33.5 24.6,35.0 22.2,36.5 20.1,38.0 18.4,39.5 17.1,41.0 16.3,42.5 16.0,44.0 16.3,45.5 17.1,47.0 18.4,48.5 20.1,50.0 22.2,51.5 24.6,53.0 27.3,54.5 30.0,56.0" fill="none" stroke="#5B2A86" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><polyline points="30.0,32.0 32.7,33.5 35.4,35.0 37.8,36.5 39.9,38.0 41.6,39.5 42.9,41.0 43.7,42.5 44.0,44.0 43.7,45.5 42.9,47.0 41.6,48.5 39.9,50.0 37.8,51.5 35.4,53.0 32.7,54.5 30.0,56.0" fill="none" stroke="#C2397A" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><polyline points="30.0,56.0 27.3,57.5 24.6,59.0 22.2,60.5 20.1,62.0 18.4,63.5 17.1,65.0 16.3,66.5 16.0,68.0 16.3,69.5 17.1,71.0 18.4,72.5 20.1,74.0 22.2,75.5 24.6,77.0 27.3,78.5 30.0,80.0" fill="none" stroke="#C2397A" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><polyline points="30.0,56.0 32.7,57.5 35.4,59.0 37.8,60.5 39.9,62.0 41.6,63.5 42.9,65.0 43.7,66.5 44.0,68.0 43.7,69.5 42.9,71.0 41.6,72.5 39.9,74.0 37.8,75.5 35.4,77.0 32.7,78.5 30.0,80.0" fill="none" stroke="#5B2A86" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><polyline points="30.0,80.0 27.3,81.5 24.6,83.0 22.2,84.5 20.1,86.0 18.4,87.5 17.1,89.0 16.3,90.5 16.0,92.0 16.3,93.5 17.1,95.0 18.4,96.5 20.1,98.0 22.2,99.5 24.6,101.0 27.3,102.5 30.0,104.0" fill="none" stroke="#5B2A86" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><polyline points="30.0,80.0 32.7,81.5 35.4,83.0 37.8,84.5 39.9,86.0 41.6,87.5 42.9,89.0 43.7,90.5 44.0,92.0 43.7,93.5 42.9,95.0 41.6,96.5 39.9,98.0 37.8,99.5 35.4,101.0 32.7,102.5 30.0,104.0" fill="none" stroke="#C2397A" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><line x1="95" y1="58" x2="95" y2="100" stroke="#C2397A" stroke-width="2.6" stroke-linecap="round"/><line x1="127" y1="58" x2="127" y2="100" stroke="#C2397A" stroke-width="2.6" stroke-linecap="round"/><polygon points="83,71 115,71 127,63 95,63" fill="#F2A7C9" fill-opacity=".85" stroke="#C2397A" stroke-width="1.4"/><polygon points="83,85 115,85 127,77 95,77" fill="#F2A7C9" fill-opacity=".85" stroke="#C2397A" stroke-width="1.4"/><polygon points="83,99 115,99 127,91 95,91" fill="#F2A7C9" fill-opacity=".85" stroke="#C2397A" stroke-width="1.4"/><line x1="83" y1="60" x2="83" y2="104" stroke="#C2397A" stroke-width="2.6" stroke-linecap="round"/><line x1="115" y1="60" x2="115" y2="104" stroke="#C2397A" stroke-width="2.6" stroke-linecap="round"/><use href="#pf" transform="translate(105,47) scale(.62,.4)"/><rect x="170" y="14" width="62" height="76" fill="#fff" stroke="#1B1730" stroke-width="1.4"/><line x1="170" y1="52" x2="232" y2="52" stroke="#5E5A72" stroke-width=".9"/><path d="M170.0 52.9 C180.8 52.9 184.7 49.3 188.6 35.2 C190.9 26.4 193.2 21.1 194.8 26.4 C196.7 34.3 197.5 44.0 198.7 52.0 C200.2 67.0 201.8 79.4 204.9 82.9 C207.2 85.6 208.8 79.4 211.8 68.8 C215.7 56.4 223.5 52.9 232.0 52.0" fill="none" stroke="#5B2A86" stroke-width="2.4" stroke-linecap="round"/><text x="162" y="56" text-anchor="middle" style="font-size:12px">Δε</text><text x="201" y="104" text-anchor="middle" style="font-size:9.5px">Wavelength</text></svg>
+<h3>Porphyrins as probes of biomolecules</h3><p>Chiroptical spectroscopy and binding studies that provide information on non-canonical conformations of DNA (such as G-quadruplexes and Z-DNA) and on other biomolecules, including miRNAs and proteins.</p>
+</div>
+
+</div>
+</section>
+
+<section id="people">
+<h2>People</h2>
+<div class="people">
+<div class="person"><img class="ph" src="photos/alessandro.jpg" alt="Alessandro D'Urso" width="132" height="132" loading="lazy"><b>Alessandro D'Urso</b><span>Principal investigator, Associate Professor of General and Inorganic Chemistry</span><a class="mail" href="mailto:adurso@unict.it">adurso@unict.it</a><a class="orcid" href="https://orcid.org/0000-0002-0255-1792" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#A6CE39"/><text x="8" y="11.2" text-anchor="middle" style="fill:#fff;font:700 8px sans-serif">iD</text></svg>ORCID</a></div>
+<div class="person"><img class="ph" src="photos/massimiliano.jpg" alt="Massimiliano Gaeta" width="132" height="132" loading="lazy"><b>Massimiliano Gaeta</b><span>Assistant Professor (RTDa)</span><a class="mail" href="mailto:massimiliano.gaeta@unict.it">massimiliano.gaeta@unict.it</a><a class="orcid" href="https://orcid.org/0000-0001-8521-4195" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#A6CE39"/><text x="8" y="11.2" text-anchor="middle" style="fill:#fff;font:700 8px sans-serif">iD</text></svg>ORCID</a></div>
+<div class="person"><img class="ph" src="photos/gabriele.jpg" alt="Gabriele Travagliante" width="132" height="132" loading="lazy"><b>Gabriele Travagliante</b><span>Postdoctoral researcher</span><a class="mail" href="mailto:travagliantegab@gmail.com">travagliantegab@gmail.com</a><a class="orcid" href="https://orcid.org/0000-0002-5939-4257" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#A6CE39"/><text x="8" y="11.2" text-anchor="middle" style="fill:#fff;font:700 8px sans-serif">iD</text></svg>ORCID</a></div>
+<div class="person"><div class="ph init" role="img" aria-label="Tiziano Grillo">TG</div><b>Tiziano Grillo</b><span>Master's thesis student</span></div>
+<div class="person"><div class="ph init" role="img" aria-label="Giorgio Campanella">GC</div><b>Giorgio Campanella</b><span>Master's thesis student</span></div>
+<div class="person"><img class="ph" src="photos/federico.jpg" alt="Federico Alecci" width="132" height="132" loading="lazy"><b>Federico Alecci</b><span>Bachelor's thesis student</span></div>
+</div>
+</section>
+
+<section id="publications">
+<h2>Selected publications</h2>
+<ul class="plain">
+<li class="pub"><em>Singlet oxygen generation in hybrid porphyrin/DOPA-melanin coatings.</em> Journal of Porphyrins and Phthalocyanines <b>2026</b>.</li>
+<li class="pub"><em>Spectroscopic investigation of the interaction between a spermine-functionalized porphyrin and TERRA G-quadruplexes.</em> International Journal of Molecular Sciences <b>2026</b>, 27, 3424. <a href="https://doi.org/10.3390/ijms27083424">DOI</a></li>
+<li class="pub"><em>Porphyrins as chiroptical conformational probes for biomolecules.</em> Molecules <b>2025</b>, 30, 1512. <a href="https://doi.org/10.3390/molecules30071512">DOI</a></li>
+<li class="pub"><em>Tuning hybrid porphyrin-melanin films via supramolecular approach.</em> Journal of Porphyrins and Phthalocyanines <b>2025</b>. <a href="https://doi.org/10.1142/S1088424625500336">DOI</a></li>
+<li class="pub"><em>Towards 1D supramolecular chiral assemblies based on porphyrin–calixarene complexes.</em> Nanoscale <b>2025</b>, 17, 6530. <a href="https://doi.org/10.1039/D4NR04288C">DOI</a></li>
+<li class="pub"><em>Self-assembled chiral film based on melanin polymers.</em> Chirality <b>2024</b>. <a href="https://doi.org/10.1002/chir.23695">DOI</a></li>
+<li class="pub"><em>Hybrid porphyrin/DOPA-melanin film as self-assembled material and smart device for dye-pollutant removal in water.</em> Chemical Engineering Journal <b>2022</b>, 433, 133262. <a href="https://doi.org/10.1016/j.cej.2021.133262">DOI</a></li>
+</ul>
+<p>Full list on <a href="https://scholar.google.com/citations?hl=en&amp;user=bbr9W2oAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a>.</p>
+</section>
+
+<section id="news">
+<h2>News</h2>
+<ul class="plain">
+<li><time datetime="2026-10">October 2026</time>Website launched. Add paper, grant and conference news here, newest first.</li>
+<li><time datetime="2026-09">September 2026</time>[Short news item]</li>
+</ul>
+</section>
+
+<section id="join">
+<h2>Join us</h2>
+<p>We welcome students for Bachelor's and Master's theses, and we are open to collaborations. Write to us with a short CV and a few lines about what interests you.</p>
+<a class="btn" href="mailto:adurso@unict.it">Email the group</a>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Laboratory of Spectroscopy of Complex Systems (LSSC)<br>Department of Chemical Sciences, University of Catania<br>Viale Andrea Doria 6, 95125 Catania, Italy<br><a href="mailto:adurso@unict.it">adurso@unict.it</a><br>Phone: <a href="tel:+390957385071">+39 095 7385071</a></p>
+</section>
+</main>
+
+<footer>&copy; 2026 LSSC. This site is run by the group and is not an official page of the University of Catania.</footer>
+</body>
+</html>
