@@ -65,6 +65,7 @@ ul.plain time{color:var(--mute);font-size:.9rem;display:block}
 footer{max-width:1040px;margin:72px auto 0;padding:24px;border-top:1px solid var(--line);color:var(--mute);font-size:.9rem}
 @media(max-width:760px){.hero{grid-template-columns:1fr}nav{gap:14px}}
 @media(prefers-reduced-motion:reduce){.spec,.spec2{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+.news-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px;margin-top:24px}.news-gallery img{display:block;width:100%;height:auto;border-radius:8px}.news-gallery a{display:block}
 </style>
 </head>
 <body>
@@ -138,7 +139,7 @@ footer{max-width:1040px;margin:72px auto 0;padding:24px;border-top:1px solid var
 <div class="person"><img class="ph" src="Alessandro%20D%27Urso.jpg" alt="Alessandro D'Urso" width="132" height="132" loading="lazy"><b>Alessandro D'Urso</b><span>Principal investigator, Associate Professor of General and Inorganic Chemistry</span><a class="mail" href="mailto:adurso@unict.it">adurso@unict.it</a><a class="orcid" href="https://orcid.org/0000-0002-0255-1792" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#A6CE39"/><text x="8" y="11.2" text-anchor="middle" style="fill:#fff;font:700 8px sans-serif">iD</text></svg>ORCID</a></div>
 <div class="person"><img class="ph" src="massimiliano%20gaeta.jpg" alt="Massimiliano Gaeta" width="132" height="132" loading="lazy"><b>Massimiliano Gaeta</b><span>Assistant Professor (RTDa)</span><a class="mail" href="mailto:massimiliano.gaeta@unict.it">massimiliano.gaeta@unict.it</a><a class="orcid" href="https://orcid.org/0000-0001-8521-4195" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#A6CE39"/><text x="8" y="11.2" text-anchor="middle" style="fill:#fff;font:700 8px sans-serif">iD</text></svg>ORCID</a></div>
 <div class="person"><img class="ph" src="Gabriele%20Travagliante.png" alt="Gabriele Travagliante" width="132" height="132" loading="lazy"><b>Gabriele Travagliante</b><span>Postdoctoral researcher</span><a class="mail" href="mailto:travagliantegab@gmail.com">travagliantegab@gmail.com</a><a class="orcid" href="https://orcid.org/0000-0002-5939-4257" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#A6CE39"/><text x="8" y="11.2" text-anchor="middle" style="fill:#fff;font:700 8px sans-serif">iD</text></svg>ORCID</a></div>
-<div class="person"><img class="ph" src="Tiziano%20Grillo.webp" alt="Tiziano Grillo" width="132" height="132" loading="lazy"><b>Tiziano Grillo</b><span>Master's thesis student</span></div>
+<div class="person"><img class="ph" src="Tiziano%20Grillo.webp" alt="Tiziano Grillo" width="132" height="132" loading="lazy"><b>Tiziano Grillo</b><span>Master's thesis student</span><a class="orcid" href="https://orcid.org/0009-0006-3902-7755" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#A6CE39"/><text x="8" y="11.2" text-anchor="middle" style="fill:#fff;font:700 8px sans-serif">iD</text></svg>ORCID</a></div>
 <div class="person"><img class="ph" src="Giorgio%20Campanella.webp" alt="Giorgio Campanella" width="132" height="132" loading="lazy"><b>Giorgio Campanella</b><span>Master's thesis student</span></div>
 <div class="person"><img class="ph" src="federico%20alecci.jpeg" alt="Federico Alecci" width="132" height="132" loading="lazy"><b>Federico Alecci</b><span>Bachelor's thesis student</span></div>
 </div>
@@ -147,7 +148,7 @@ footer{max-width:1040px;margin:72px auto 0;padding:24px;border-top:1px solid var
 <section id="publications">
 <h2>Selected publications</h2>
 <ul class="plain">
-<li class="pub"><em>Singlet oxygen generation in hybrid porphyrin/DOPA-melanin coatings.</em> Journal of Porphyrins and Phthalocyanines <b>2026</b>.</li>
+<li class="pub"><em>Singlet oxygen generation in hybrid porphyrin/DOPA-melanin coatings.</em> Journal of Porphyrins and Phthalocyanines <b>2026</b>. <a href="https://doi.org/10.1142/S1088424626500318">DOI</a></li>
 <li class="pub"><em>Spectroscopic investigation of the interaction between a spermine-functionalized porphyrin and TERRA G-quadruplexes.</em> International Journal of Molecular Sciences <b>2026</b>, 27, 3424. <a href="https://doi.org/10.3390/ijms27083424">DOI</a></li>
 <li class="pub"><em>Porphyrins as chiroptical conformational probes for biomolecules.</em> Molecules <b>2025</b>, 30, 1512. <a href="https://doi.org/10.3390/molecules30071512">DOI</a></li>
 <li class="pub"><em>Tuning hybrid porphyrin-melanin films via supramolecular approach.</em> Journal of Porphyrins and Phthalocyanines <b>2025</b>. <a href="https://doi.org/10.1142/S1088424625500336">DOI</a></li>
@@ -161,9 +162,14 @@ footer{max-width:1040px;margin:72px auto 0;padding:24px;border-top:1px solid var
 <section id="news">
 <h2>News</h2>
 <ul class="plain">
-<li><time datetime="2026-10">October 2026</time>Website launched. Add paper, grant and conference news here, newest first.</li>
-<li><time datetime="2026-09">September 2026</time>[Short news item]</li>
+<li><time datetime="2026-09">September 2026</time>Our group helped organise and participated in <a href="https://nanoscale.sciencesconf.org/" target="_blank" rel="noopener">Chirality@TheNanoscale 2026</a>, held in Lipari, Italy, on 20–24 September 2026.</li>
 </ul>
+<div class="news-gallery" aria-label="Photos from Chirality@TheNanoscale 2026">
+<figure><a href="IMG_3964.JPG" target="_blank" rel="noopener" aria-label="Open full-size conference group photo"><img src="IMG_3964.JPG" alt="Conference participants gathered outdoors in Lipari" width="5184" height="3456" loading="lazy"></a><figcaption>Conference group photo in Lipari.</figcaption></figure>
+<figure><a href="IMG_4335.JPG" target="_blank" rel="noopener" aria-label="Open full-size photo from the conference"><img src="IMG_4335.JPG" alt="Participants on stage during Chirality@TheNanoscale 2026" width="5184" height="3456" loading="lazy"></a><figcaption>A moment from Chirality@TheNanoscale 2026.</figcaption></figure>
+<figure><a href="IMG_3951.JPG" target="_blank" rel="noopener" aria-label="Open full-size photo from a conference session"><img src="IMG_3951.JPG" alt="Two participants at the lectern during a conference session in Lipari" width="5184" height="3456" loading="lazy"></a><figcaption>During a conference session in Lipari.</figcaption></figure>
+<figure><a href="IMG_3953.JPG" target="_blank" rel="noopener" aria-label="Open full-size photo of a scientific presentation"><img src="IMG_3953.JPG" alt="Scientific presentation during Chirality@TheNanoscale 2026" width="5184" height="3456" loading="lazy"></a><figcaption>A scientific presentation at Chirality@TheNanoscale 2026.</figcaption></figure>
+</div>
 </section>
 
 <section id="join">
